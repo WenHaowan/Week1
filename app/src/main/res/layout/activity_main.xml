@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wen="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="as.bwei.com.week1.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:src="@drawable/shape"
+            android:layout_width="600dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_above="@+id/wave_view"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <as.bwei.com.week1.WaterView
+            wen:color_01="#ff0ff0"
+            wen:color_02="#CCCCCC"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/wave_view"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+</RelativeLayout>
